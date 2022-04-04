@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Practice Vue.js</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="products.js" defer></script>
+  </head>
+  <body>
+    <h1>PRODUCTS!</h1>
+    <div id="app">
+      {{ message }}
+      <button v-on:click="getProducts()">Click for product list</button>
+      {{ products }}
+    </div>
+  </body>
+</html>
